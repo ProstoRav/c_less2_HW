@@ -12,4 +12,4 @@ if ((number >= 100) && (number < 1000))
 else if ((number <= -100) && (number > -1000))
     Console.Write($"Вторая цифра числа {number} равна {(number % 100 - number % 10) / -10}");
 else
-    Console.Write($"Число не трёхзначное");
+    Console.Write($"Число {number} не трёхзначное");

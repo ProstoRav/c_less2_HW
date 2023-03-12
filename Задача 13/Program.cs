@@ -28,4 +28,4 @@ else if (number < -999)
     Console.Write($"Третья цифра числа {number} равна {result}");
 }
 else
-    Console.Write($"Третьей цифры у данного числа нет");
+    Console.Write($"Третьей цифры у числа {number} нет");
