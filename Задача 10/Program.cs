@@ -3,11 +3,13 @@
 782 -> 8
 918 -> 1 */
 
-int a;
+int number;
 Console.Write($"Введите трёхзначное число: ");
-int.TryParse(Console.ReadLine()!, out a);
+int.TryParse(Console.ReadLine()!, out number);
 
-if ((a >= 100) && (a < 1000))
-    Console.Write($"Вторая цифра числа {a} равна {(a % 100 - a % 10) / 10}");
+if ((number >= 100) && (number < 1000))
+    Console.Write($"Вторая цифра числа {number} равна {(number % 100 - number % 10) / 10}");
+else if ((number <= -100) && (number > -1000))
+    Console.Write($"Вторая цифра числа {number} равна {(number % 100 - number % 10) / -10}");
 else
     Console.Write($"Число не трёхзначное");
